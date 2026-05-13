@@ -1,15 +1,114 @@
-#banner{
+/* 1. Reset General: Para que todo mida lo que debe medir */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f2f5; /* Un gris muy suave para que la página no se vea vacía al alejar el zoom */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 2. Banner: Ajustado para que NO se corte el texto de la imagen */
+#banner {
     background-image: url(./img/banner.jpg.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%; /* Ajusta la imagen al ancho y alto exacto */
+    background-position: center;
     width: 100%;
-    height: 400px;
+    /* En lugar de 400px fijos, usamos aspect-ratio para que sea proporcional */
+    aspect-ratio: 16 / 6; 
+    min-height: 250px;
 }
+
+/* 3. Contenedor Principal: El truco para el Zoom 80% */
+.contenedor-principal {
+    max-width: 1200px; /* Evita que el contenido se desparrame en pantallas enormes */
+    margin: 0 auto;    /* Centra todo el bloque en el medio de la pantalla */
+    padding: 20px;
+}
+
 #titulo {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif, monospace;
+    font-size: 2.5rem;
+    margin-top: 40px;
+    text-transform: uppercase;
+    color: #1a1a1a;
 }
-#subtitulo{
-    text-align:center ;
-    font-family: Arial, Helvetica, sans-serif;
+
+#subtitulo {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+/* 4. Sección de Tarjetas (NAS Info) */
+#descripcion {
+    display: flex;
+    justify-content: center;
+    gap: 30px;      /* Espacio entre cajas */
+    flex-wrap: wrap; /* Si la pantalla es pequeña, se ponen una debajo de otra */
+}
+
+.tarjeta_desc {
+    background-color: #fff;
+    width: 350px;
+    min-height: 450px;
+    padding: 25px;
+    border-radius: 15px; /* Bordes redondeados más modernos */
+    border: 1px solid #ddd;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08); /* Sombra para que "flote" */
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+/* Efecto al pasar el mouse por encima */
+.tarjeta_desc:hover {
+    transform: translateY(-10px);
+}
+
+.tarjeta_desc h3 {
+    margin-bottom: 20px;
+    color: #0056b3;
+    font-size: 1.4rem;
+}
+
+/* AJUSTE PARA LA IMAGEN: Evita que el bombillo/árbol se recorten */
+.tarjeta_desc img {
+    width: 100%;
+    height: 180px;
+    /* Cambiado de 'cover' a 'contain' para mostrar la imagen completa */
+    object-fit: contain; 
+    border-radius: 8px;
+    margin-bottom: 20px;
+    /* Un fondo blanco y padding para que el dibujo no toque los bordes */
+    background-color: #fff;
+    padding: 10px;
+}
+
+.tarjeta_desc p {
+    text-align: justify;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* 5. Footer: Los tres contenedores que pediste */
+footer {
+    background-color: #1a1a1a;
+    margin-top: 60px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+footer div {
+    width: 40px;
+    height: 40px;
+    background-color: #444;
+    border-radius: 50%;
 }

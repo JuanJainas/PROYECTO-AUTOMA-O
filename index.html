@@ -4,15 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Proyecto de automatizacion</title>
+    <title>Proyecto NAS - Raspberry Pi 3</title>
 </head>
 <body>
     <header>
         <div id="banner"></div>
-    </header>
-    <h1>Modalidad Mecatronica</h1>
-    <h2>Seccion 11-07</h2>
-    <p>LA RASPBERRY ES UNA TARJETA DE DISEÑO Y PROGRAMACION MUY ESPECIFICAS!!!</p>
+    </header>    
+    
+    <h1 id="titulo">MODALIDAD DE MECATRÓNICA</h1>
+    <h2 id="subtitulo">SECCIÓN 11-07</h2>
+
+    <section id="descripcion">
+        <div class="tarjeta_desc">
+            <h3>Descripción del Proyecto</h3>
+            <img src="img/NAS.jpg" alt="Raspberry Pi NAS">
+            <p>Este proyecto consiste en la implementación de un servidor <b>NAS (Network Attached Storage)</b> utilizando una Raspberry Pi 3. El objetivo es centralizar archivos y copias de seguridad en un solo lugar, accesibles desde cualquier dispositivo de la red local mediante protocolos como SMB o mediante software como OpenMediaVault.</p>
+        </div>
+
+        <div class="tarjeta_desc">
+            <h3>Justificación</h3>
+            <img src="img/images.png" alt="Ahorro Energético">
+            <p>Se elige la Raspberry Pi 3 debido a su <b>bajo consumo energético</b> (ideal para estar encendida 24/7) y su costo reducido en comparación con servidores comerciales. Además, permite un control total sobre la privacidad de los datos, eliminando la dependencia de servicios de terceros como Google Drive o Dropbox.</p>
+        </div>
+
+        <div class="tarjeta_desc">
+            <h3>Información Técnica</h3>
+            <img src="img/RaspBerry Pi 3.jfif" alt="Hardware">
+            <p>Para el montaje se requiere el sistema operativo <b>Raspberry Pi OS Lite</b>, una unidad de almacenamiento externa (HDD/SSD) y una conexión estable vía Ethernet. Es fundamental configurar permisos de usuario, montaje automático de unidades y asegurar el acceso mediante SSH para la administración remota del servidor.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div></div>
+        <div></div>
+        <div></div>
+    </footer>
 </body> 
 </html>
-
