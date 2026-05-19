@@ -3,41 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
     <title>Proyecto NAS - Raspberry Pi 3</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
-        <div id="banner"></div>
-    </header>    
-    
-    <h1 id="titulo">MODALIDAD DE MECATRÓNICA</h1>
-    <h2 id="subtitulo">SECCIÓN 11-07</h2>
 
-    <section id="descripcion">
-        <div class="tarjeta_desc">
-            <h3>Descripción del Proyecto</h3>
-            <img src="img/NAS.jpg" alt="Raspberry Pi NAS">
-            <p>Este proyecto consiste en la implementación de un servidor <b>NAS (Network Attached Storage)</b> utilizando una Raspberry Pi 3. El objetivo es centralizar archivos y copias de seguridad en un solo lugar, accesibles desde cualquier dispositivo de la red local mediante protocolos como SMB o mediante software como OpenMediaVault.</p>
+    <nav class="navbar">
+        <div class="nav-contenedor">
+            <div class="brand">
+                <span class="brand-icon">◉</span>
+                <span>Proyecto NAS</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#descripcion">Proyecto</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#footer-info">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="inicio">
+        <div id="banner">
+            <img src="./img/banner.jpg.jpg" alt="Banner del proyecto NAS">
+        </div>
+    </header>
+
+    <main class="contenedor-principal">
+        <section class="presentacion">
+            <h1 id="titulo">MODALIDAD DE MECATRÓNICA</h1>
+            <h2 id="subtitulo">SECCIÓN 11-07</h2>
+
+            <p class="descripcion_intro">
+                Proyecto de servidor NAS con Raspberry Pi 3, enfocado en almacenamiento en red, ahorro energético,
+                acceso remoto y administración local de archivos.
+            </p>
+
+            <a class="boton_principal" href="#video">Ver video explicativo</a>
+        </section>
+
+        <section id="descripcion">
+            <article class="tarjeta_desc">
+                <h3><span class="card-icon">🖥️</span> Descripción del Proyecto</h3>
+                <img src="img/NAS.jpg" alt="Raspberry Pi NAS">
+                <p>
+                    Este proyecto consiste en la implementación de un servidor <b>NAS (Network Attached Storage)</b>
+                    utilizando una Raspberry Pi 3. El objetivo es centralizar archivos y copias de seguridad en un solo
+                    lugar, accesibles desde cualquier dispositivo de la red local mediante protocolos como SMB o mediante
+                    software como OpenMediaVault.
+                </p>
+            </article>
+
+            <article class="tarjeta_desc">
+                <h3><span class="card-icon">⚡</span> Justificación</h3>
+                <img src="img/images.png" alt="Ahorro Energético">
+                <p>
+                    Se elige la Raspberry Pi 3 debido a su <b>bajo consumo energético</b> (ideal para estar encendida 24/7)
+                    y su costo reducido en comparación con servidores comerciales. Además, permite un control total sobre la
+                    privacidad de los datos, eliminando la dependencia de servicios de terceros como Google Drive o Dropbox.
+                </p>
+            </article>
+
+            <article class="tarjeta_desc">
+                <h3><span class="card-icon">🧰</span> Información Técnica</h3>
+                <img src="img/RaspBerry Pi 3.jfif" alt="Hardware">
+                <p>
+                    Para el montaje se requiere el sistema operativo <b>Raspberry Pi OS Lite</b>, una unidad de almacenamiento
+                    externa (HDD/SSD) y una conexión estable vía Ethernet. Es fundamental configurar permisos de usuario,
+                    montaje automático de unidades y asegurar el acceso mediante SSH para la administración remota del servidor.
+                </p>
+            </article>
+
+            <article class="tarjeta_desc tarjeta_video" id="video">
+                <h3><span class="card-icon">🎬</span> Video Explicativo</h3>
+
+                <p>
+                    Video explicativo de servidor NAS con Raspberry Pi.
+                </p>
+
+                <a
+                    class="youtube-link"
+                    href="https://www.youtube.com/watch?v=jirErzc_HgY"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Ver video en YouTube
+                </a>
+            </article>
+        </section>
+    </main>
+
+    <footer id="footer-info">
+        <div class="footer-contenedor">
+            <div class="footer-bloque">
+                <h4>Proyecto</h4>
+                <p>NAS con Raspberry Pi 3</p>
+            </div>
+
+            <div class="footer-bloque">
+                <h4>Curso</h4>
+                <p>Modalidad de Mecatrónica 11-07 J.M.</p>
+            </div>
+
+            <div class="footer-bloque">
+                <h4>Repositorio</h4>
+                <p>GitHub: tu-usuario / tu-repositorio</p>
+            </div>
         </div>
 
-        <div class="tarjeta_desc">
-            <h3>Justificación</h3>
-            <img src="img/images.png" alt="Ahorro Energético">
-            <p>Se elige la Raspberry Pi 3 debido a su <b>bajo consumo energético</b> (ideal para estar encendida 24/7) y su costo reducido en comparación con servidores comerciales. Además, permite un control total sobre la privacidad de los datos, eliminando la dependencia de servicios de terceros como Google Drive o Dropbox.</p>
-        </div>
-
-        <div class="tarjeta_desc">
-            <h3>Información Técnica</h3>
-            <img src="img/RaspBerry Pi 3.jfif" alt="Hardware">
-            <p>Para el montaje se requiere el sistema operativo <b>Raspberry Pi OS Lite</b>, una unidad de almacenamiento externa (HDD/SSD) y una conexión estable vía Ethernet. Es fundamental configurar permisos de usuario, montaje automático de unidades y asegurar el acceso mediante SSH para la administración remota del servidor.</p>
-        </div>
-    </section>
-
-    <footer>
-        <div></div>
-        <div></div>
-        <div></div>
+        <p class="footer-copy">© 2026 Proyecto académico</p>
     </footer>
-</body> 
+
+</body>
 </html>
