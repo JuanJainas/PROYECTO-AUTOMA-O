@@ -88,15 +88,6 @@ header{padding:18px 16px 0}
 .tarjeta_video{grid-column:1 / -1;max-width:700px;margin:0 auto}
 .tarjeta_video p{margin-top:8px;text-align:center}
 
-.video-frame{
-  width:100%;
-  aspect-ratio:16 / 9;
-  border:0;
-  border-radius:12px;
-  margin-top:10px;
-  box-shadow:0 8px 18px rgba(0,0,0,.12)
-}
-
 .youtube-link{
   margin-top:20px;padding:14px 24px;background:linear-gradient(145deg,#00c853,#00e676);
   color:#08111f;box-shadow:0 10px 20px rgba(0,255,120,.20),0 20px 40px rgba(0,255,120,.28)

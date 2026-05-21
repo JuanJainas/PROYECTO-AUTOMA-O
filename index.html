@@ -31,7 +31,6 @@
     </header>
 
     <main class="contenedor-principal">
-
         <section class="presentacion">
             <h1 id="titulo">MODALIDAD DE MECATRÓNICA</h1>
             <h2 id="subtitulo">SECCIÓN 11-07</h2>
@@ -44,26 +43,46 @@
         </section>
 
         <section id="descripcion">
+            <article class="tarjeta_desc">
+                <h3><span class="card-icon">🖥️</span> Descripción del Proyecto</h3>
+                <img src="img/NAS.jpg" alt="Raspberry Pi NAS">
+                <p>
+                    Este proyecto consiste en la implementación de un servidor <b>NAS (Network Attached Storage)</b> utilizando una Raspberry Pi 3. El objetivo es centralizar archivos y copias de seguridad en un solo lugar, accesibles desde cualquier dispositivo de la red local mediante protocolos como SMB o mediante software como OpenMediaVault.
+                </p>
+            </article>
+
+            <article class="tarjeta_desc">
+                <h3><span class="card-icon">⚡</span> Justificación</h3>
+                <img src="img/images.png" alt="Ahorro Energético">
+                <p>
+                    Se elige la Raspberry Pi 3 debido a su <b>bajo consumo energético</b> (ideal para estar encendida 24/7) y su costo reducido en comparación con servidores comerciales. Además, permite un control total sobre la privacidad de los datos, eliminando la dependencia de servicios de terceros como Google Drive o Dropbox.
+                </p>
+            </article>
+
+            <article class="tarjeta_desc">
+                <h3><span class="card-icon">🧰</span> Información Técnica</h3>
+                <img src="img/RaspBerry Pi 3.jfif" alt="Hardware">
+                <p>
+                    Para el montaje se requiere el sistema operativo <b>Raspberry Pi OS Lite</b>, una unidad de almacenamiento externa (HDD/SSD) y una conexión estable vía Ethernet. Es fundamental configurar permisos de usuario, montaje automático de unidades y asegurar el acceso mediante SSH para la administración remota del servidor.
+                </p>
+            </article>
 
             <article class="tarjeta_desc tarjeta_video" id="video">
                 <h3><span class="card-icon">🎬</span> Video Explicativo</h3>
                 <p>Video explicativo de servidor NAS con Raspberry Pi.</p>
 
-                <iframe
-                    class="video-frame"
-                    src="https://www.youtube.com/embed/jirErzc_HgY"
-                    title="Video explicativo NAS con Raspberry Pi"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-                </iframe>
+                <a class="youtube-link"
+                    href="https://www.youtube.com/watch?v=jirErzc_HgY"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Ver video en YouTube
+                </a>
             </article>
-
         </section>
     </main>
 
     <footer id="footer-info">
         <div class="footer-contenedor">
-
             <div class="footer-bloque">
                 <h4>Proyecto</h4>
                 <p>NAS con Raspberry Pi 3</p>
@@ -85,7 +104,6 @@
                     </a>
                 </p>
             </div>
-
         </div>
 
         <p class="footer-copy">© 2026 Proyecto académico</p>
