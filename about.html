@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto NAS - Raspberry Pi 3</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-contenedor">
+            <div class="brand">
+                <span class="brand-icon">◉</span>
+                <span>Proyecto NAS</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="#descripcion">Proyecto</a></li>
+                <li><a href="./index.html#video">Video</a></li>
+                <li><a href="./index.html#footer-info">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="inicio">
+        <div id="banner">
+            <img src="./img/banner.jpg.jpg" alt="Banner del proyecto NAS">
+        </div>
+    </header>
+
+    <main class="contenedor-principal">
+
+        <section class="presentacion">
+            <h1 id="titulo">MODALIDAD DE MECATRÓNICA</h1>
+            <h2 id="subtitulo">SECCIÓN 11-07</h2>
+
+            <p class="descripcion_intro">
+                Este proyecto presenta el desarrollo de un servidor NAS con Raspberry Pi 3, diseñado para almacenamiento en red, acceso local a archivos y administración eficiente de la información.
+            </p>
+        </section>
+
+        <section id="descripcion">
+
+            <article class="tarjeta_desc">
+                <h3><span class="card-icon">🎯</span> Objetivo del Proyecto</h3>
+                <img src="img/NAS.jpg" alt="Objetivo del proyecto NAS">
+                <p>
+                    El objetivo principal de este proyecto es implementar un servidor <b>NAS (Network Attached Storage)</b> capaz de centralizar archivos, copias de seguridad y documentos importantes en un solo dispositivo, accesible desde varios equipos conectados a la misma red.
+                </p>
+            </article>
+
+            <article class="tarjeta_desc">
+                <h3><span class="card-icon">🔗</span> Funcionamiento</h3>
+                <img src="img/images.png" alt="Funcionamiento del NAS">
+                <p>
+                    El sistema funciona conectando la Raspberry Pi 3 a una red local mediante Ethernet, permitiendo compartir carpetas y administrar archivos de forma remota. De esta manera, se obtiene una solución práctica, económica y de bajo consumo energético para almacenamiento doméstico o académico.
+                </p>
+            </article>
+
+            <article class="tarjeta_desc">
+                <h3><span class="card-icon">🛠️</span> Componentes y Administración</h3>
+                <img src="img/RaspBerry Pi 3.jfif" alt="Componentes del proyecto NAS">
+                <p>
+                    Para su implementación se utilizan una Raspberry Pi 3, almacenamiento externo HDD o SSD, sistema operativo <b>Raspberry Pi OS Lite</b> y configuración por SSH. Esto permite administrar el servidor de forma segura y mantener un control total sobre los datos almacenados.
+                </p>
+            </article>
+
+        </section>
+    </main>
+
+    <script>
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+        window.onload = () => window.scrollTo(0, 0);
+    </script>
+
+</body>
+</html>
