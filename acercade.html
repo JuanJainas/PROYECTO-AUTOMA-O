@@ -1,81 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto NAS - Raspberry Pi 3</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Proyecto | Incubadora Automática</title><link rel="stylesheet" href="./style.css"></head>
 <body>
-
-    <nav class="navbar">
-        <div class="nav-contenedor">
-            <div class="brand">
-                <span class="brand-icon">◉</span>
-                <span>Proyecto NAS</span>
-            </div>
-
-            <ul class="nav-links">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="#descripcion">Proyecto</a></li>
-                <li><a href="./index.html#video">Video</a></li>
-                <li><a href="./index.html#footer-info">Contacto</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <header id="inicio">
-        <div id="banner">
-            <img src="./img/banner.jpg.jpg" alt="Banner del proyecto NAS">
-        </div>
-    </header>
-
-    <main class="contenedor-principal">
-
-        <section class="presentacion">
-            <h1 id="titulo">MODALIDAD DE MECATRÓNICA</h1>
-            <h2 id="subtitulo">SECCIÓN 11-07</h2>
-
-            <p class="descripcion_intro">
-                Este proyecto presenta el desarrollo de un servidor NAS con Raspberry Pi 3, diseñado para almacenamiento en red, acceso local a archivos y administración eficiente de la información.
-            </p>
-        </section>
-
-        <section id="descripcion">
-
-            <article class="tarjeta_desc">
-                <h3><span class="card-icon">🎯</span> Objetivo del Proyecto</h3>
-                <img src="img/NAS.jpg" alt="Objetivo del proyecto NAS">
-                <p>
-                    El objetivo principal de este proyecto es implementar un servidor <b>NAS (Network Attached Storage)</b> capaz de centralizar archivos, copias de seguridad y documentos importantes en un solo dispositivo, accesible desde varios equipos conectados a la misma red.
-                </p>
-            </article>
-
-            <article class="tarjeta_desc">
-                <h3><span class="card-icon">🔗</span> Funcionamiento</h3>
-                <img src="img/images.png" alt="Funcionamiento del NAS">
-                <p>
-                    El sistema funciona conectando la Raspberry Pi 3 a una red local mediante Ethernet, permitiendo compartir carpetas y administrar archivos de forma remota. De esta manera, se obtiene una solución práctica, económica y de bajo consumo energético para almacenamiento doméstico o académico.
-                </p>
-            </article>
-
-            <article class="tarjeta_desc">
-                <h3><span class="card-icon">🛠️</span> Componentes y Administración</h3>
-                <img src="img/RaspBerry Pi 3.jfif" alt="Componentes del proyecto NAS">
-                <p>
-                    Para su implementación se utilizan una Raspberry Pi 3, almacenamiento externo HDD o SSD, sistema operativo <b>Raspberry Pi OS Lite</b> y configuración por SSH. Esto permite administrar el servidor de forma segura y mantener un control total sobre los datos almacenados.
-                </p>
-            </article>
-
-        </section>
-    </main>
-
-    <script>
-        if ('scrollRestoration' in history) {
-            history.scrollRestoration = 'manual';
-        }
-        window.onload = () => window.scrollTo(0, 0);
-    </script>
-
-</body>
-</html>
+<nav class="navbar"><a class="brand" href="./index.html"><span class="brand-mark">⌁</span><span>Incubadora <strong>Automática</strong></span></a><div class="nav-links"><a href="./index.html">Inicio</a><a href="#proyecto">Proyecto</a><a href="./design.html">Diseño técnico</a><a href="./index.html#evidencias">Evidencias</a></div></nav>
+<main>
+<section class="page-hero section-shell"><span class="eyebrow">PROYECTO · MECATRÓNICA 11-07</span><h1>De un dispensador de agua a una incubadora automática</h1><p>Esta página reúne el contexto, objetivos y alcance del prototipo sin añadir especificaciones técnicas que todavía no han sido confirmadas.</p></section>
+<section class="section-shell" id="proyecto"><div class="section-heading"><span class="eyebrow">01 · DESCRIPCIÓN</span><h2>El proyecto</h2></div><div class="two-column"><article class="info-panel accent"><h3>Concepto</h3><p>La estructura principal utiliza un dispensador de agua adaptado para funcionar como incubadora. El sistema incorpora un dispositivo de 420 W como parte del sistema de calentamiento/dispensación indicado para el proyecto.</p></article><article class="info-panel"><h3>Automatización</h3><p>La propuesta busca controlar automáticamente las condiciones necesarias para la incubación mediante sensores, actuadores y un sistema de control electrónico.</p></article></div></section>
+<section class="section-shell"><div class="section-heading"><span class="eyebrow">02 · ALCANCE</span><h2>Áreas que integra</h2></div><div class="cards-grid"><article class="card"><span class="card-number">A</span><h3>Estructura</h3><p>Adaptación física del dispensador y distribución de los elementos del prototipo.</p></article><article class="card"><span class="card-number">B</span><h3>Electricidad</h3><p>Alimentación, conexiones y distribución de energía. Los valores definitivos quedan pendientes.</p></article><article class="card"><span class="card-number">C</span><h3>Electrónica</h3><p>Integración del controlador, sensores y actuadores cuando se definan sus modelos.</p></article><article class="card"><span class="card-number">D</span><h3>Software</h3><p>Programación de la lógica de supervisión y actuación automática.</p></article></div></section>
+<section class="section-shell dark-section"><div class="section-heading"><span class="eyebrow">03 · INFORMACIÓN PENDIENTE</span><h2>Datos por completar</h2><p>Para documentar técnicamente el prototipo faltan en el repositorio actual los modelos de sensores, controlador, actuadores, alimentación y código fuente específico de la incubadora.</p></div><div class="pending-list"><div>Modelo y cantidad de sensores</div><div>Microcontrolador o controlador utilizado</div><div>Modelos de actuadores y su función</div><div>Tensión/corriente de alimentación</div><div>Código de control y parámetros</div><div>Fotografías, simulaciones y video reales</div></div></section>
+</main>
+<footer><div class="footer-inner"><div><span class="eyebrow">11-07</span><h2>Proyecto de Mecatrónica</h2></div><div><a href="./index.html">← Volver al inicio</a></div></div><p class="footer-copy">© 2026 · Proyecto académico</p></footer>
+</body></html>

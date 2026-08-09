@@ -3,119 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto NAS - Raspberry Pi 3</title>
+    <meta name="description" content="Incubadora automática de huevos de pato - proyecto de Mecatrónica 11-07.">
+    <title>Incubadora Automática de Huevos de Pato | Mecatrónica 11-07</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
-    <nav class="navbar">
-        <div class="nav-contenedor">
-            <div class="brand">
-                <span class="brand-icon">◉</span>
-                <span>Proyecto NAS</span>
-            </div>
-
-            <ul class="nav-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="./acercade.html">Proyecto</a></li>
-                <li><a href="#video">Video</a></li>
-                <li><a href="#footer-info">Contacto</a></li>
-            </ul>
+<header class="site-header" id="inicio">
+    <nav class="navbar" aria-label="Navegación principal">
+        <a class="brand" href="#inicio"><span class="brand-mark">⌁</span><span>Incubadora <strong>Automática</strong></span></a>
+        <div class="nav-links">
+            <a href="#introduccion">Introducción</a><a href="#objetivos">Objetivos</a><a href="./design.html">Diseño</a><a href="#funcionamiento">Funcionamiento</a><a href="#evidencias">Evidencias</a>
         </div>
     </nav>
-
-    <header id="inicio">
-        <div id="banner">
-            <img src="./img/banner.jpg.jpg" alt="Banner del proyecto NAS">
-        </div>
-    </header>
-
-    <main class="contenedor-principal">
-        <section class="presentacion">
-            <h1 id="titulo">MODALIDAD DE MECATRÓNICA</h1>
-            <h2 id="subtitulo">SECCIÓN 11-07</h2>
-
-            <p class="descripcion_intro">
-                Proyecto de servidor NAS con Raspberry Pi 3, enfocado en almacenamiento en red, ahorro energético, acceso remoto y administración local de archivos.
-            </p>
-
-            <a href="./about.html" class="boton_principal">Ver proyecto</a>
-        </section>
-
-        <section id="descripcion">
-            <article class="tarjeta_desc">
-                <h3><span class="card-icon">🖥️</span> Descripción del Proyecto</h3>
-                <img src="img/NAS.jpg" alt="Raspberry Pi NAS">
-                <p>
-                    Este proyecto consiste en la implementación de un servidor <b>NAS (Network Attached Storage)</b> utilizando una Raspberry Pi 3. El objetivo es centralizar archivos y copias de seguridad en un solo lugar, accesibles desde cualquier dispositivo de la red local mediante protocolos como SMB o mediante software como OpenMediaVault.
-                </p>
-            </article>
-
-            <article class="tarjeta_desc">
-                <h3><span class="card-icon">⚡</span> Justificación</h3>
-                <img src="img/images.png" alt="Ahorro Energético">
-                <p>
-                    Se elige la Raspberry Pi 3 debido a su <b>bajo consumo energético</b> (ideal para estar encendida 24/7) y su costo reducido en comparación con servidores comerciales. Además, permite un control total sobre la privacidad de los datos, eliminando la dependencia de servicios de terceros como Google Drive o Dropbox.
-                </p>
-            </article>
-
-            <article class="tarjeta_desc">
-                <h3><span class="card-icon">🧰</span> Información Técnica</h3>
-                <img src="img/RaspBerry Pi 3.jfif" alt="Hardware">
-                <p>
-                    Para el montaje se requiere el sistema operativo <b>Raspberry Pi OS Lite</b>, una unidad de almacenamiento externa (HDD/SSD) y una conexión estable vía Ethernet. Es fundamental configurar permisos de usuario, montaje automático de unidades y asegurar el acceso mediante SSH para la administración remota del servidor.
-                </p>
-            </article>
-
-            <article class="tarjeta_desc tarjeta_video" id="video">
-    <h3><span class="card-icon">🎬</span> Video Explicativo</h3>
-    <p>Video explicativo de servidor NAS con Raspberry Pi.</p>
-
-    <iframe
-        class="video-frame"
-        src="https://www.youtube.com/embed/jirErzc_HgY"
-        title="Video explicativo NAS con Raspberry Pi"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen>
-    </iframe>
-</article>
-        </section>
-    </main>
-
-    <footer id="footer-info">
-        <div class="footer-contenedor">
-            <div class="footer-bloque">
-                <h4>Proyecto</h4>
-                <p>NAS con Raspberry Pi 3</p>
-            </div>
-
-            <div class="footer-bloque">
-                <h4>Curso</h4>
-                <p>Modalidad de Mecatrónica 11-07 J.M.</p>
-            </div>
-
-            <div class="footer-bloque">
-                <h4>Repositorio</h4>
-                <p>
-                    JuanJainas:
-                    <a href="https://github.com/JuanJainas/PROYECTO-AUTOMA-O"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        Ver repositorio
-                    </a>
-                </p>
-            </div>
-        </div>
-
-        <p class="footer-copy">© 2026 Proyecto académico</p>
-    </footer>
-
-    <script>
-        if ('scrollRestoration' in history) {
-            history.scrollRestoration = 'manual';
-        }
-        window.onload = () => window.scrollTo(0, 0);
-    </script>
-
+</header>
+<main>
+<section class="hero section-shell">
+    <div class="hero-copy"><span class="eyebrow">PROYECTO DE MECATRÓNICA · 11-07</span><h1>Incubadora automática de <span>huevos de pato</span></h1><p>Adaptación de un dispensador de agua para desarrollar un sistema de incubación con control, sensores, actuadores y automatización.</p><div class="hero-actions"><a class="btn btn-primary" href="#introduccion">Conocer el proyecto</a><a class="btn btn-ghost" href="./design.html">Ver diseño técnico</a></div><div class="hero-specs"><div><strong>420 W</strong><span>dispositivo indicado para el sistema de calentamiento/dispensación</span></div><div><strong>Control</strong><span>automatización mediante sensores y actuadores</span></div><div><strong>Base</strong><span>dispensador de agua adaptado</span></div></div></div>
+    <div class="hero-visual"><img src="./img/incubadora-placeholder.svg" alt="Ilustración de referencia de la incubadora; sustituir por fotografía real del prototipo"><p class="image-note">Espacio para la fotografía real del prototipo.</p></div>
+</section>
+<section class="section-shell" id="introduccion"><div class="section-heading"><span class="eyebrow">01 · CONTEXTO</span><h2>Introducción</h2><p>Este proyecto busca aplicar principios de mecatrónica a la adaptación de un dispensador de agua para convertirlo en una incubadora automática de huevos de pato.</p></div><div class="two-column"><article class="info-panel accent"><span class="panel-icon">◈</span><h3>Problema y necesidad</h3><p>La propuesta parte de la necesidad de construir un prototipo capaz de controlar automáticamente las condiciones de incubación. La solución integra una estructura reutilizada, electrónica de control y elementos de actuación.</p></article><article class="info-panel"><span class="panel-icon">⚙</span><h3>Enfoque mecatrónico</h3><p>El proyecto combina diseño estructural, sistema eléctrico, electrónica, sensores, actuadores, programación y automatización en un mismo prototipo.</p></article></div></section>
+<section class="section-shell" id="objetivos"><div class="section-heading"><span class="eyebrow">02 · PROPÓSITO</span><h2>Objetivos</h2></div><div class="cards-grid"><article class="card featured"><span class="card-number">01</span><h3>Objetivo general</h3><p>Desarrollar una incubadora automática de huevos de pato a partir de un dispensador de agua, integrando un sistema de control electrónico para automatizar las condiciones necesarias del proceso.</p></article><article class="card"><span class="card-number">02</span><h3>Diseñar</h3><p>Adaptar la estructura disponible y organizar los elementos del prototipo de forma funcional y segura.</p></article><article class="card"><span class="card-number">03</span><h3>Integrar</h3><p>Relacionar sensores, actuadores, alimentación y controlador dentro de un sistema electrónico coherente.</p></article><article class="card"><span class="card-number">04</span><h3>Automatizar</h3><p>Implementar la lógica de control y programación necesaria para supervisar y actuar sobre las condiciones del sistema.</p></article></div></section>
+<section class="section-shell dark-section" id="funcionamiento"><div class="section-heading"><span class="eyebrow">03 · AUTOMATIZACIÓN</span><h2>¿Cómo funciona?</h2><p>La secuencia exacta de sensores, valores de control y actuadores debe completarse con los datos definitivos del prototipo.</p></div><div class="steps"><div class="step"><span>01</span><div><h3>Lectura</h3><p>Los sensores registran las condiciones del interior de la incubadora.</p></div></div><div class="step"><span>02</span><div><h3>Procesamiento</h3><p>El controlador recibe las lecturas y ejecuta la lógica programada.</p></div></div><div class="step"><span>03</span><div><h3>Actuación</h3><p>Los actuadores responden según la lógica de control definida para el prototipo.</p></div></div><div class="step"><span>04</span><div><h3>Supervisión</h3><p>El sistema continúa midiendo y corrigiendo las condiciones mientras permanece en funcionamiento.</p></div></div></div></section>
+<section class="section-shell" id="componentes"><div class="section-heading"><span class="eyebrow">04 · HARDWARE</span><h2>Componentes y sistema</h2><p>Solo se muestran aquí los datos confirmados. Los elementos que todavía no están definidos quedan señalados para completar posteriormente.</p></div><div class="component-grid"><div class="component"><span>01</span><h3>Estructura</h3><p>Dispensador de agua adaptado como base del prototipo.</p></div><div class="component"><span>02</span><h3>Calentamiento / dispensación</h3><p>Dispositivo de 420 W indicado para esta parte del proyecto.</p></div><div class="component pending"><span>03</span><h3>Sensor(es)</h3><p>Definir modelo, cantidad y variable medida.</p></div><div class="component pending"><span>04</span><h3>Controlador</h3><p>Definir microcontrolador o sistema de control utilizado.</p></div><div class="component pending"><span>05</span><h3>Actuadores</h3><p>Definir modelos y función específica de cada actuador.</p></div><div class="component pending"><span>06</span><h3>Fuente de alimentación</h3><p>Definir tensión, corriente y distribución de alimentación.</p></div></div></section>
+<section class="section-shell" id="programacion"><div class="section-heading"><span class="eyebrow">05 · SOFTWARE</span><h2>Programación y control</h2></div><div class="code-explainer"><div><strong>Entrada</strong><span>Lecturas de sensores</span></div><div class="arrow">→</div><div><strong>Proceso</strong><span>Lógica del controlador</span></div><div class="arrow">→</div><div><strong>Salida</strong><span>Actuadores</span></div></div><article class="info-panel"><h3>Lógica de funcionamiento</h3><p>El programa debe leer las variables definidas para la incubadora, compararlas con los criterios de control establecidos y activar o desactivar los actuadores correspondientes. El código fuente y sus parámetros se pueden incorporar aquí cuando estén disponibles en el repositorio.</p></article></section>
+<section class="section-shell" id="construccion"><div class="section-heading"><span class="eyebrow">06 · PROCESO</span><h2>Proceso de construcción</h2></div><ol class="timeline"><li><span>01</span><div><h3>Preparación del dispensador</h3><p>Selección y adaptación de la estructura que servirá como cuerpo de la incubadora.</p></div></li><li><span>02</span><div><h3>Diseño y distribución</h3><p>Organización del espacio para componentes, cableado, sensores y elementos de actuación.</p></div></li><li><span>03</span><div><h3>Montaje</h3><p>Instalación de los elementos eléctricos y electrónicos definidos para el prototipo.</p></div></li><li><span>04</span><div><h3>Pruebas</h3><p>Verificación del funcionamiento, control y respuesta del sistema.</p></div></li></ol></section>
+<section class="section-shell" id="evidencias"><div class="section-heading"><span class="eyebrow">07 · RESULTADOS</span><h2>Evidencias del proyecto</h2><p>Las fotografías, simulaciones y videos reales se incorporarán cuando estén disponibles en el repositorio.</p></div><div class="evidence-grid"><article class="evidence"><span>FOTOGRAFÍA</span><h3>Prototipo terminado</h3><p>Agregar fotografía real de la incubadora.</p></article><article class="evidence"><span>SIMULACIÓN</span><h3>Sistema de control</h3><p>Agregar captura o enlace de la simulación utilizada.</p></article><article class="evidence"><span>VIDEO</span><h3>Demostración</h3><p>Agregar el video real del funcionamiento del prototipo.</p></article></div></section>
+<section class="section-shell conclusions"><div class="section-heading"><span class="eyebrow">08 · CIERRE</span><h2>Conclusiones</h2></div><div class="two-column"><article class="info-panel"><h3>Resultado esperado</h3><p>La integración de estructura, electrónica, control y programación permite plantear una solución automatizada a partir de un elemento reutilizado.</p></article><article class="info-panel"><h3>Aprendizaje</h3><p>El proyecto permite aplicar conocimientos de diseño, montaje, electricidad, electrónica y programación dentro de un sistema mecatrónico.</p></article></div></section>
+</main>
+<footer id="contacto"><div class="footer-inner"><div><span class="eyebrow">PROYECTO ACADÉMICO</span><h2>Incubadora automática de huevos de pato</h2><p>Modalidad de Mecatrónica · 11-07</p></div><div><h3>Autores</h3><p>Información de integrantes pendiente de completar.</p><a href="https://github.com/JuanJainas/PROYECTO-AUTOMA-O" target="_blank" rel="noopener noreferrer">Repositorio en GitHub ↗</a></div></div><p class="footer-copy">© 2026 · Proyecto de Mecatrónica</p></footer>
 </body>
 </html>

@@ -1,58 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diseño - Proyecto NAS</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./design.css">
-</head>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Diseño técnico | Incubadora Automática</title><link rel="stylesheet" href="./style.css"></head>
 <body>
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.html">Proyecto NAS</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu2">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="menu2">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="acercade.html">Proyecto</a></li>
-            <li class="nav-item active"><a class="nav-link" href="design.html">Diseño</a></li>
-            <li class="nav-item"><a class="nav-link" href="gallery.html">Galería</a></li>
-        </ul>
-    </div>
-</nav>
-
-<header class="container py-5 text-center">
-    <h1 class="display-4">Diseño del Sistema</h1>
-    <p class="lead">Organización visual y funcional del servidor NAS con Raspberry Pi 3.</p>
-</header>
-
-<main class="container pb-5">
-    <div class="row">
-        <div class="col-lg-6 mb-4">
-            <div class="card h-100 shadow-sm">
-                <div class="card-body">
-                    <h5 class="card-title">Estructura</h5>
-                    <p class="card-text">La Raspberry Pi actúa como servidor principal, conectada a almacenamiento externo y a la red local por Ethernet.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-6 mb-4">
-            <div class="card h-100 shadow-sm">
-                <div class="card-body">
-                    <h5 class="card-title">Funcionamiento</h5>
-                    <p class="card-text">Los usuarios acceden a carpetas compartidas mediante la red, permitiendo copiar, consultar y respaldar archivos.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+<nav class="navbar"><a class="brand" href="./index.html"><span class="brand-mark">⌁</span><span>Incubadora <strong>Automática</strong></span></a><div class="nav-links"><a href="./index.html">Inicio</a><a href="./acercade.html">Proyecto</a><a href="#arquitectura">Diseño</a><a href="#electrico">Sistema eléctrico</a><a href="#programacion">Programación</a></div></nav>
+<main>
+<section class="page-hero section-shell"><span class="eyebrow">DISEÑO · SISTEMA MECATRÓNICO</span><h1>Arquitectura del prototipo</h1><p>Organización visual del sistema estructural, eléctrico, electrónico y de control.</p></section>
+<section class="section-shell" id="arquitectura"><div class="section-heading"><span class="eyebrow">01 · ESTRUCTURA</span><h2>Diseño del prototipo</h2></div><div class="architecture"><div class="architecture-box main-box"><span>ESTRUCTURA</span><strong>Dispensador de agua adaptado</strong><small>Cuerpo principal de la incubadora</small></div><div class="architecture-line">↓</div><div class="architecture-row"><div class="architecture-box"><span>ENERGÍA</span><strong>Fuente de alimentación</strong><small>Datos técnicos pendientes</small></div><div class="architecture-box"><span>CONTROL</span><strong>Controlador electrónico</strong><small>Modelo pendiente</small></div><div class="architecture-box"><span>ACTUACIÓN</span><strong>Dispositivo 420 W</strong><small>Parte del sistema indicado</small></div></div><div class="architecture-line">↑</div><div class="architecture-box sensor-box"><span>ENTRADA</span><strong>Sensores</strong><small>Modelos y variables pendientes</small></div></div></section>
+<section class="section-shell" id="electrico"><div class="section-heading"><span class="eyebrow">02 · ELECTRICIDAD Y ELECTRÓNICA</span><h2>Sistema eléctrico y electrónico</h2><p>El diagrama definitivo debe realizarse con las referencias reales de los componentes y su alimentación.</p></div><div class="table-like"><div><strong>Elemento</strong><strong>Estado</strong><strong>Información</strong></div><div><span>Dispensador adaptado</span><span class="ok">Confirmado</span><span>Estructura principal</span></div><div><span>Dispositivo 420 W</span><span class="ok">Confirmado</span><span>Parte del calentamiento/dispensación</span></div><div><span>Sensores</span><span class="pending-tag">Pendiente</span><span>Modelo, cantidad y variable</span></div><div><span>Controlador</span><span class="pending-tag">Pendiente</span><span>Modelo y alimentación</span></div><div><span>Actuadores</span><span class="pending-tag">Pendiente</span><span>Modelo y función</span></div></div></section>
+<section class="section-shell" id="programacion"><div class="section-heading"><span class="eyebrow">03 · CONTROL</span><h2>Programación</h2></div><div class="flow"><div><b>01</b><h3>Adquirir</h3><p>Leer sensores.</p></div><div><b>02</b><h3>Comparar</h3><p>Evaluar la lógica definida.</p></div><div><b>03</b><h3>Actuar</h3><p>Controlar actuadores.</p></div><div><b>04</b><h3>Repetir</h3><p>Supervisar continuamente.</p></div></div><article class="info-panel"><h3>Código fuente</h3><p>No se encontró código específico de la incubadora en el repositorio actual. Cuando se agregue, esta sección puede mostrar la lógica y enlazar directamente al archivo.</p></article></section>
+<section class="section-shell"><div class="section-heading"><span class="eyebrow">04 · CONSTRUCCIÓN</span><h2>Detalles constructivos</h2></div><div class="cards-grid"><article class="card"><h3>Preparación</h3><p>Adaptar el dispensador de agua para recibir los elementos del sistema.</p></article><article class="card"><h3>Montaje</h3><p>Ubicar componentes, cableado y elementos de actuación.</p></article><article class="card"><h3>Pruebas</h3><p>Comprobar conexiones y respuesta del control.</p></article></div></section>
 </main>
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+<footer><div class="footer-inner"><div><span class="eyebrow">DISEÑO TÉCNICO</span><h2>Incubadora automática</h2></div><div><a href="./index.html">← Volver al inicio</a></div></div><p class="footer-copy">© 2026 · Proyecto académico</p></footer>
+</body></html>
